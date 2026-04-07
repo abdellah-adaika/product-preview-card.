@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+
+
+:root {
+  --cream-color:hsl(30, 38%, 92%);
+  --dark-cyan:hsl(158, 36%, 37%);
+  --dark-blue:hsl(212, 21%, 14%);
+  --dark-Grey:hsl(228, 12%, 48%);
+}
+
+* {
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+
+body {
+  font-family: "Montserrat",serif;
+  font-family: "Fraunces", sans-serif;
+ background: var(--cream-color);
+ min-height:100vh;
+ display:grid;
+ place-content:center;
+}
+
+#product {
+  display:grid;
+  grid-template-columns:1fr
+  max-width:600px;
+  margin:1rem;
+}
+
+img {
+  display:block;
+  max-width:100%;
+  border-top-left-radius:10px;
+  border-bottom-left-radius:10px;
+}
+
+#product img {
+  border-top-right-radius:10px;
+  border-bottom-left-radius:0;
+}
+
+#product .product-content {
+  background-color:#fff;
+  padding:2rem;
+  border-top-right-radius:0px;
+  border-bottom-right-radius:10px;
+  border-bottom-left-radius:10px;
+}
+
+#product .product-content .category {
+  font-size:12px;
+  letter-spacing:4px;
+  color: var(--dark-Grey);
+}
+
+#product .product-content h1 {
+  font-family:"Fraunces", sans-serif;
+  font-size:32px;
+  margin:20px 0;
+  line-height:1;
+  color: var(--dark-blue);
+}
+
+#product .product-content p {
+  font-size:14px;
+  color: var(--dark-Grey);
+  line-height:1.6;
+}
+
+
+#product .product-content .price {
+  display:flex;
+  align-items:center;
+  margin:20px 0px;
+}
+
+
+#product .product-content .price  .descount-price {
+  font-size:30px;
+  color:var(--dark-cyan);
+  font-family:"Fraunces", sans-serif;
+  margin-right:20px;
+  
+}
+
+
+#product .product-content .cart {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:15px;
+  border:none;
+  background-color: var(--dark-cyan);
+  color:#fff;
+  align-items:center;
+  width:100%;
+  font-weight:700;
+  
+}
